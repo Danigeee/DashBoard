@@ -19,16 +19,25 @@ export const ListaProductos = () => {
 
   return (
     <div className='page-main'>
-        <section>
-            <h2>Lista de Productos Disponibles</h2>
+            <h2 className='titulo-pagina'>Lista de Productos Disponibles</h2>
+        <section className='cards'>
             {      
         productos.data.map( dato => {
           return(
-            <li key={dato.id}>
-               <p>{dato.category.name}</p> 
-               <p>{dato.name}</p>
-               <p>{dato.description}</p>
-            </li>
+            <div key={dato.id} >         
+              <div className="card card-color"> 
+                <div className='header-card-product'>
+                  <h2 className="card__title">Categora: {dato.category.name}  </h2> 
+                  <h2 className="card__title">Nombre:{dato.name}</h2>
+                  <h2 className="card__title">Descripcion:</h2>
+                </div>
+
+                <p className="card__apply">{dato.description}</p>
+                <p className="card__apply">
+                  <a className="card__link" href="#">Editar <i class="fas fa-arrow-right"></i></a>
+                </p>
+              </div>
+            </div>
           )
         })
       }

@@ -3,7 +3,8 @@ import { Card } from './Card'
 
 export const ListaUsuarios = ({titulo,data}) => {
   return (
-    <section className='lista'>
+    
+    <section className='lista-usuarios'>
       <h2 className='titulo-lista'>{titulo}</h2>
       <ul className='ul-lista-usuario'>
       {      
@@ -11,10 +12,10 @@ export const ListaUsuarios = ({titulo,data}) => {
           return(
             <li className='item-lista-usuario' key={dato.id}>
 
-              <div className='usuario-lista'>
+              {/* <div className='usuario-lista'> */}
                 <h4> {dato.name} </h4>
-                <p className='email-lista'>{dato.email}</p>
-              </div>
+                <h4 className='email-lista'>{dato.email}</h4>
+              {/* </div> */}
 
             </li>
           )
@@ -22,5 +23,6 @@ export const ListaUsuarios = ({titulo,data}) => {
       }
       </ul>
     </section >
+    
   )
 }

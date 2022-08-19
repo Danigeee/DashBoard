@@ -41,7 +41,7 @@ export const DashBoardPage = () => {
     return (
     
       <div className='page-main'>
-  
+        <h2 className='titulo-pagina'>General</h2>
         <section className= "tiles">
         
             <Card titulo = {"Total de Usuarios"} icono = {iconoUsuarios} dato = {usuarios.count} />

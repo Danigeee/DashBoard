@@ -12,10 +12,12 @@ export const Card = ({icono,titulo,dato}) => {
     <article className= "tile">
       <div className= "tile-header">
         {icono}
-        <h3> {titulo} </h3>
+        <h3> {titulo}  </h3>
+        <h4 className="data-number">{dato}</h4>
+
       </div>
 
-      <h4 className="data-number">{dato}</h4>
+      
             
     </article>
   );
