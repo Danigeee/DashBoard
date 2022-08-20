@@ -13,8 +13,8 @@ export const ListaUsuarios = ({titulo,data}) => {
             <li className='item-lista-usuario' key={dato.id}>
 
               {/* <div className='usuario-lista'> */}
-                <h4> {dato.name} </h4>
-                <h4 className='email-lista'>{dato.email}</h4>
+                <h5> {dato.name} </h5>
+                <h5 className='email-lista'>{dato.email}</h5>
               {/* </div> */}
 
             </li>

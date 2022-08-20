@@ -8,7 +8,7 @@
     --c-gray-300: #bdbbb7;
     --c-gray-200: #f1f1f1;
     --c-gray-100: #ffffff;
-    --c-green-500: #45ffbc;
+    --c-green-500: rgb(231, 199, 95);
     --c-olive-500: #e3ffa8;
     --c-white: var(--c-gray-100);
     --c-text-primary: var(--c-gray-100);
@@ -17,9 +17,7 @@
   }
 
   body {
-    font-family: "Be Vietnam Pro", sans-serif;
-    background-color:  var(--c-gray-200);
- 
+    font-family: "Be Vietnam Pro", sans-serif; 
   }
 
   /* ++++++++++++++++++++ Pages ++++++++++++++++ */
@@ -94,7 +92,7 @@
     color: var(--c-text-tertiary);
   }
 
-  .navigation a  {
+  .item-a  {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -106,6 +104,12 @@
     margin-left: -7px;
     margin-bottom: 14px;
   }
+
+  .navegation-a{
+    padding-left: 10px;
+    width: 95%;
+  }
+
   .navigation a * {
     transition: 0.25s ease;
   }
@@ -140,7 +144,7 @@
   .tile {
     padding-left: 10px;
     border-radius: 8px;
-    background-color: #448980;
+    background-color: black;
     color: #f5feff;
     /* min-height: 125px; */
     height: 100px;
@@ -187,25 +191,22 @@ ion-icon{
 .lista-contenedor{
   display: flex;
   margin-top: 40px;
-  justify-content: space-around;
+  justify-content: space-between;
   
 }
 
 .lista-usuarios{
   border-radius: 3%;
-  width: 45%;
+  width: 50%;
   padding: 5px;
-  box-shadow: 7px 14px 14px 3px rgb(61 102 116);
- background: linear-gradient(332deg, rgb(4 2 36 / 74%) 0%, rgba(112,141,156,0.4640231092436975) 28%, rgb(40 169 195 / 24%) 100%);
-
+  background-color: rgb(237, 234, 234);
 }
 .lista-productos{
   border-radius: 3%;
   width: 45%;
   padding: 5px;
-  box-shadow: 7px 14px 14px 3px rgb(61 102 116);
- background: linear-gradient(332deg, rgb(4 2 36 / 74%) 0%, rgba(112,141,156,0.4640231092436975) 28%, rgb(40 169 195 / 24%) 100%);
-  
+  background-color: rgb(237, 234, 234);
+;  
 }
 .titulo-lista{
   text-align: center;
@@ -214,7 +215,7 @@ ion-icon{
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 5px;
   
 }
@@ -222,10 +223,10 @@ ion-icon{
   display: flex;
   flex-direction: column;
   border-style: solid;
-  border-radius: 15%;
+  border-radius: 30px;
   width: 45%;
   margin-bottom: 10px;
-  background-color: #4c5e74;
+  background-color: rgb(69, 69, 69);
   color: #f5feff;
   text-align: center;
   padding: 5px;
@@ -247,9 +248,13 @@ ion-icon{
   border-radius: 15%;
   width: 45%;
   margin-bottom: 10px;
-  background-color: #4c5e74;
+  background-color: rgb(69, 69, 69);
   color: #f5feff;
   text-align: center;
+}
+
+.item-lista-cantidad{
+  color: rgb(236, 236, 22);
 }
 
 /* ++++++++++++++++++++ footer ++++++++++++++++++++++ */
@@ -332,5 +337,5 @@ ion-icon{
 }
 
 .card-color {
-  background: radial-gradient(#60efbc, #58d5c9);
+  background: radial-gradient(#a2a1a1, #7d7d7d);
 }

@@ -27,7 +27,7 @@ export const ListaProductos = () => {
             <div key={dato.id} >         
               <div className="card card-color"> 
                 <div className='header-card-product'>
-                  <h2 className="card__title">Categora: {dato.category.name}  </h2> 
+                  <h2 className="card__title">Categoria: {dato.category.name}  </h2> 
                   <h2 className="card__title">Nombre:{dato.name}</h2>
                   <h2 className="card__title">Descripcion:</h2>
                 </div>

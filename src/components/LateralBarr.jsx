@@ -10,20 +10,20 @@ export const LateralBarr = () => {
                  <a href="#" className='img-container'>
 					<img src='/img/Logo.svg' alt='imagen logo' className='imagen-logo' />
 				</a>
-				<NavLink to = "/">General </NavLink>
+				<NavLink className="navegation-a item-a" to = "/">General </NavLink>
 				
-				<NavLink to = "/productos">Lista de Productos </NavLink>
+				<NavLink className="navegation-a item-a" to = "/productos">Lista de Productos </NavLink>
 					
 				
-				<a href="#">
+				<a className="item-a" href="#">
 					<i className="ph-check-square"></i>
 					<span>Tablas</span>
 				</a>
-				<a href="#">
+				<a className="item-a" href="#">
 					<i className="ph-swap"></i>
 					<span>Graficos</span>
 				</a>
-				<a href="#">
+				<a className="item-a" href="#">
 					<i className="ph-file-text"></i>
 					<span>Finanzas</span>
 				</a>

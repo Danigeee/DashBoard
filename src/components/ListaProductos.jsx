@@ -11,7 +11,7 @@ export const ListaProductos = ({titulo,data}) => {
           return(
             <li className='item-lista-producto' key={dato.id}> 
 
-               <p>  <strong> {dato.category_name}</strong> Cantidad: {dato.total_amount} </p> 
+               <p>  <strong> {dato.category_name}</strong> Cantidad:  <span className="item-lista-cantidad">{dato.total_amount}</span> </p> 
                 
             </li>
           )
